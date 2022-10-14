@@ -33,7 +33,10 @@ void Rectangulo::area()
 
 int main()
 {
-    Rectangulo p1(6,2); // 'p1', vendria a ser el objeto creado.
+    int l, w;
+    cout<<"Write the long: "; cin>>l;
+    cout<<"Write the width: "; cin>>w;
+    Rectangulo p1(l,w); // 'p1', vendria a ser el objeto creado.
     // De esta manera invocamos a los metodos de la clase en base a 1 objeto.
     p1.perimeter();
     p1.area();
