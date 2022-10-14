@@ -15,6 +15,20 @@ class Rectangulo
         void perimeter();
         void area(); 
 };
+// Designando una funcion a nuestro constrcutor, para que nos disponga los atributos de la clase.
+void Rectangulo::rectangulo(int _lonj, int _width)
+{
+    lonj = _lonj;
+    width = _width;
+}
+void Rectangulo::perimeter()
+{
+    cout<<"El perimetro del Rectangulo es: "<<lonj*2+width*2<<endl;
+}
+void Rectangulo::area()
+{
+    cout<<"El area del Rectangulo es: "<<lonj*width<<endl;
+}
 
 int main()
 {
