@@ -22,10 +22,10 @@ Tiempo::Tiempo(int _hour, int _min, int _sec)
 }
 Tiempo::Tiempo(int seconds)
 {
-    sec = seconds % 60;
+    hour = seconds/3600;
+    seconds %= 3600;
     min = seconds/60;
-    hour = min/60;
-    min = min%60;
+    sec = seconds%60;
 }
 void Tiempo::mostrar()
 {
