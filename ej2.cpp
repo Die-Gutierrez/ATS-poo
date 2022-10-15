@@ -12,6 +12,7 @@ class Tiempo
     public:
         Tiempo(int, int, int); // Constructor 1.
         Tiempo(int); // Constructor 2.
+        ~Tiempo(); // Destrcutor
         void mostrar();
 };
 Tiempo::Tiempo(int _hour, int _min, int _sec)
@@ -27,6 +28,7 @@ Tiempo::Tiempo(int seconds)
     min = seconds/60;
     sec = seconds%60;
 }
+Tiempo::~Tiempo(){} // Destructor
 void Tiempo::mostrar()
 {
     cout<<"La hora es: "<<hour<<":"<<min<<":"<<sec<<endl;
@@ -39,6 +41,7 @@ int main()
 
     laHora.mostrar();
     lahora.mostrar();
+    lahora.~Tiempo(); // Destruyendo el objeto
 
     return 0;
 }
