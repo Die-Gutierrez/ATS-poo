@@ -5,7 +5,9 @@ using namespace std;
 
 class Person
 {
-    private:
+    // 'proteced', mediante esta palabra hacemos que la clase padre pueda ser modificada por las 
+    // clases hijas, modificando asi los 'atributos'
+    protected:
         string name;
         int age;
     public:
